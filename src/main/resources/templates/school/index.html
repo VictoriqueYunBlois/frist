@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>学校</title>
+    <th:block th:replace="common/meta"></th:block>
+    <th:block th:replace="common/link"></th:block>
+    <th:block th:replace="common/include"></th:block>
+</head>
+<body>
+<div class="wrapper">
+    <th:block th:replace="common/header"></th:block>
+    <th:block th:replace="common/left"></th:block>
+    <th:block th:replace="common/container"></th:block>
+    <th:block th:replace="common/footer"></th:block>
+</div>
+</body>
+<th:block th:replace="school/js/getSchoolData"></th:block>
+</html>

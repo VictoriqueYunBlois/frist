@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="common/link"/>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<form id="newForm" onsubmit="return false">
+    <div>
+        <input id="loginName" name="loginName" type="text">
+    </div>
+    <div>
+        <input id="loginPwd" name="loginPwd" type="password">
+    </div>
+    <button type="submit" id="btnLogin">登录</button>
+</form>
+<th:block th:replace="common/include"/>
+<th:block th:replace="js/login_js"/>
+</body>
+</html>

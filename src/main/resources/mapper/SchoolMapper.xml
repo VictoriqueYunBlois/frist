@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.llk.demo.dao.SchoolMapper">
+    <select id="getSchoolData" resultType="com.llk.demo.model.School" parameterType="com.llk.demo.common.BaseModelExample">
+        select * from school limit #{pageSize}, #{rowIndex}
+    </select>
+    <update id="updateSchool"  parameterType="com.llk.demo.model.School">
+        update school set school.name=#{name},seq = #{seq},score = #{score} where school.id = #{id};
+    </update>
+</mapper>
